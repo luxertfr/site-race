@@ -245,7 +245,7 @@ scene.add(light);
 // Building
 function createBuilding(width, height, depth) {
   const geometry = new THREE.BoxGeometry(width, height, depth);
-  const material = new THREE.MeshStandardMaterial({
+  const material = new THREE.MeshBasicMaterial({
     color: 0x888888,
     metalness: 0.1,
     roughness: 0.8
@@ -310,14 +310,14 @@ generateLampPosts()
 
 const borderLeft = new THREE.Mesh(
   new THREE.BoxGeometry(0.2, 0.2, 100),
-  new THREE.MeshStandardMaterial({ color: 0x999999 })
+  new THREE.MeshBasicMaterial({ color: 0x999999 })
 );
 borderLeft.position.set(5.1, -0.4, 0); 
 scene.add(borderLeft);
 
 const borderRight = new THREE.Mesh(
   new THREE.BoxGeometry(0.2, 0.2, 100),
-  new THREE.MeshStandardMaterial({ color: 0x999999 })
+  new THREE.MeshBasicMaterial({ color: 0x999999 })
 );
 borderRight.position.set(-5.1, -0.4, 0); 
 scene.add(borderRight);
@@ -333,7 +333,7 @@ function createTree() {
   group.add(trunk);
 
   const leafGeometry = new THREE.SphereGeometry(0.5, 8, 8);
-  const leafMaterial = new THREE.MeshStandardMaterial({ color: 0x228B22 });
+  const leafMaterial = new THREE.MeshBasicMaterial({ color: 0x228B22 });
   const leaves = new THREE.Mesh(leafGeometry, leafMaterial);
   leaves.position.y = 1.3;
   group.add(leaves);
