@@ -22,7 +22,7 @@ const codeElement = document.querySelector("#code code");
 const codeEffect = document.getElementById("code")
 const output = document.getElementById("output");
 
-const codeLine = 'print("Mr Tournier est le meilleur prof")'
+const codeLine = 'print(noteMahenn)'
 let index = 0
 
 function typeLine() {
