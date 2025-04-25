@@ -109,7 +109,6 @@ function calculateWinnings(winningCar) {
       totalWinnings -= bet.amount;
     }
   });
-  totalWinnings -= betAmount
 
   // Parametres par default
 
