@@ -103,7 +103,7 @@ function calculateWinnings(winningCar) {
   bets.forEach(bet => {
     if (bet.id === winningCar) {
       totalWinnings += bet.amount * 2;
-      money += totalWinnings
+      money += bet.amount * 2;
       updateMoney(money) 
     } else {
       totalWinnings -= bet.amount;
