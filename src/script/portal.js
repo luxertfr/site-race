@@ -276,22 +276,20 @@ function generateBuildings(count = 30) {
 generateBuildings(10)
 
 function createLampPost(x, z) {
-  // Poteau
+  
   const poleGeometry = new THREE.CylinderGeometry(0.05, 0.05, 2, 8);
   const poleMaterial = new THREE.MeshStandardMaterial({ color: 0xaaaaaa });
   const pole = new THREE.Mesh(poleGeometry, poleMaterial);
   pole.position.set(x, 1, z);
   scene.add(pole);
 
-  // Tête de lampe
   const lampGeometry = new THREE.SphereGeometry(0.1, 8, 8);
   const lampMaterial = new THREE.MeshStandardMaterial({ emissive: 0xffffcc });
   const lamp = new THREE.Mesh(lampGeometry, lampMaterial);
   lamp.position.set(x, 2.05, z);
   scene.add(lamp);
 
-  // Lumière faible
-  const light = new THREE.PointLight(0xffffcc, 0.3, 5); // intensité faible, portée réduite
+  const light = new THREE.PointLight(0xffffcc, 0.3, 5); 
   light.position.set(x, 2.05, z);
   scene.add(light);
 }
@@ -314,28 +312,26 @@ const borderLeft = new THREE.Mesh(
   new THREE.BoxGeometry(0.2, 0.2, 100),
   new THREE.MeshStandardMaterial({ color: 0x999999 })
 );
-borderLeft.position.set(5.1, -0.4, 0); // Juste à droite de la route
+borderLeft.position.set(5.1, -0.4, 0); 
 scene.add(borderLeft);
 
 const borderRight = new THREE.Mesh(
   new THREE.BoxGeometry(0.2, 0.2, 100),
   new THREE.MeshStandardMaterial({ color: 0x999999 })
 );
-borderRight.position.set(-5.1, -0.4, 0); // Juste à droite de la route
+borderRight.position.set(-5.1, -0.4, 0); 
 scene.add(borderRight);
 
 // Tree 
 function createTree() {
   const group = new THREE.Group();
 
-  // Tronc
   const trunkGeometry = new THREE.CylinderGeometry(0.1, 0.1, 1, 6);
   const trunkMaterial = new THREE.MeshStandardMaterial({ color: 0x8B4513 });
   const trunk = new THREE.Mesh(trunkGeometry, trunkMaterial);
   trunk.position.y = 0.5;
   group.add(trunk);
 
-  // Feuillage
   const leafGeometry = new THREE.SphereGeometry(0.5, 8, 8);
   const leafMaterial = new THREE.MeshStandardMaterial({ color: 0x228B22 });
   const leaves = new THREE.Mesh(leafGeometry, leafMaterial);
@@ -349,9 +345,9 @@ function generateTrees(count) {
   for (let i = 0; i < count; i++) {
     const tree = createTree();
 
-    const zPos = Math.random() * 51 - 50; // Route centrée sur 0
+    const zPos = Math.random() * 51 - 50; 
     const side = Math.random() < 0.5 ? -1 : 1;
-    const xOffset = THREE.MathUtils.randFloat(6, 12); // Distance de la route
+    const xOffset = THREE.MathUtils.randFloat(6, 12); 
     tree.position.set(side * xOffset, 0, zPos);
 
     scene.add(tree);
@@ -363,7 +359,7 @@ generateTrees(10)
 
 // Road
 const roadGeometry = new THREE.BoxGeometry(10, 0.1, 100);
-const roadMaterial = new THREE.MeshPhongMaterial({ 
+const roadMaterial = new THREE.MeshBasicMaterial({ 
   color: 0x333333,
   map: roadTexture
 });
