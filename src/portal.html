@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race</title>
+    <link rel="stylesheet" href="./styles/race-style.css">
+</head>
+<body>
+    <div id="countdown"></div>
+    <div id="winner"></div>
+    <div id="betting-menu">
+        <h2>Pariez sur une voiture</h2>
+        <div id="remaining-money">
+            <p>Argent restant : <span id="money-amount">100</span> euros</p>
+        </div>
+        <div class="bet-form">
+            <label for="car1-bet">Montant parié sur la voiture blanche:</label>
+            <input type="number" id="car1-bet" value="0">
+          </div>
+          <div class="bet-form">
+            <label for="car2-bet">Montant parié sur la voiture grise :</label>
+            <input type="number" id="car2-bet" value="0">
+          </div>
+        <h3>Paris en cours:</h3>
+        <ul id="bet-list"></ul>
+        <p id="amountBet"></p>
+        <button onclick="placeBet()">Placer le pari</button>
+        <button onclick="startRace()">Démarrer la course</button>
+        <p id="betting-status"></p>
+    </div>
+  
+    <canvas class="webgl"></canvas>
+    <script type="module" src="./script/portal.js"></script>
+</body>
+</html>

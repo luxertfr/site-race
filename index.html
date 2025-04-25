@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSI Site</title>
+    <link rel="stylesheet" href="/src/styles/index-style.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="title">
+                <h1>NSI Site</h1>
+            </div>
+            <div class="liens">
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#simulation">Simulation</a></li>
+                    <li><a href="#credits">Crédits</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="hiddenS" id="accueil">
+        <h2>Accueil</h2>
+        <div class="container">
+            <div class="description-container">
+                <p>Un site immersif entre pari numérique et simulation 3D</p>  
+            </div>
+            <div class="code-container">
+                <pre id="code"><code></code></pre>
+                <pre id="output" class="hidden">> Mr Tournier est le meilleur prof</pre>
+            </div>
+        </div>
+              
+    </section>
+    <section class="hiddenS" id="about">
+        <h2>A propos</h2>
+        <div class="box">
+            <h3>L'univers du site :</h3>
+            <p>
+            Ce projet a été réalisé dans le cadre de la spécialité NSI. L'univers du site s'inspire de l'informatique et de renard.
+            </p>
+        </div>
+        <div class="box">
+            <h3>Simulation 3D</h3>
+            <p>
+            Ayant des connaissances dans le développement web, j'ai intégré une simulation 3D en <strong>Three.js</strong>, avec une course des cars virtuelle sur laquelle l'utilisateur peut parier, pour rendre le site plus original.
+            </p>
+        </div>
+        
+
+        
+    </section>
+    <section class="hiddenS" id="simulation">
+        <h2>Simulation</h2>
+        <p>Ici, se trouve la simulation où on pourra faire des paris sur des courses de voitures.</p>
+        <a href="src/portal.html" class="bouton-simulation">Lancer la simulation</a>
+    </section>
+    <section class="hiddenS" id="credits">
+        <h2>Crédits</h2>
+        <p>Projet réalisé dans le cadre de la NSI - Avril 2025</p>
+        <p>Ressources : 
+        <ul>
+            <li><a href="https://chatgpt.com/" target="_blank">Chatgpt</a> pour l'inspiration</li>
+            <li><a href="https://developer.mozilla.org/fr/" target="_blank">Mozilla</a> documentation</li>
+            <li><a href="https://threejs.org/" target="_blank">Three js</a> documentation</li>
+        </ul></p>
+        <footer>© 2025 - Ulomi Mahenn 107</footer>
+    </section>
+    <script src="src/script/index.js"></script>
+</body>
+</html>

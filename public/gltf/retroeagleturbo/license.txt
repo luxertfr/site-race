@@ -1,0 +1,11 @@
+Model Information:
+* title:	Eagle Turbo '92 - Retro Style Model
+* source:	https://sketchfab.com/3d-models/eagle-turbo-92-retro-style-model-eb7d6c072bf54d9ba6a48f6d49e6abeb
+* author:	Daniel Zhabotinsky (https://sketchfab.com/DanielZhabotinsky)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Eagle Turbo '92 - Retro Style Model" (https://sketchfab.com/3d-models/eagle-turbo-92-retro-style-model-eb7d6c072bf54d9ba6a48f6d49e6abeb) by Daniel Zhabotinsky (https://sketchfab.com/DanielZhabotinsky) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
