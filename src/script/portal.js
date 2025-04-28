@@ -370,8 +370,8 @@ scene.add(road);
 /**
  * Animation
  */
-let speedCar1 = 0.01;
-let speedCar2 = 0.01;
+let speedCar1 = 0.09;
+let speedCar2 = 0.09;
 
 
 let boostCar1 = false; 
@@ -416,8 +416,8 @@ const tick = () => {
       }
   
       
-      speedCar1 = THREE.MathUtils.clamp(speedCar1, 0.03, 0.06);
-      speedCar2 = THREE.MathUtils.clamp(speedCar2, 0.03, 0.06);
+      speedCar1 = THREE.MathUtils.clamp(speedCar1, 0.06, 0.12);
+      speedCar2 = THREE.MathUtils.clamp(speedCar2, 0.06, 0.12);
   
       
       if (!boostCar1 && Math.random() < 0.01) { 
