@@ -370,8 +370,8 @@ scene.add(road);
 /**
  * Animation
  */
-let speedCar1 = 0.045;
-let speedCar2 = 0.045;
+let speedCar1 = 0.01;
+let speedCar2 = 0.01;
 
 
 let boostCar1 = false; 
