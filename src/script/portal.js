@@ -398,7 +398,7 @@ const tick = () => {
     
     if (speedCar1 > 0 && speedCar2 > 0) {
       if (boostCar1) {
-        speedCar1 += 0.02;
+        speedCar1 += 0.04;
         if (elapsedTime - boostStartTime1 >= boostDuration) {
           boostCar1 = false;
         }
@@ -407,7 +407,7 @@ const tick = () => {
       }
   
       if (boostCar2) {
-        speedCar2 += 0.02;
+        speedCar2 += 0.04;
         if (elapsedTime - boostStartTime2 >= boostDuration) {
           boostCar2 = false;
         }
