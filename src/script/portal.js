@@ -67,14 +67,14 @@ function placeBet() {
     return;
   }
 
-  if (betCar1 > 0 && betCar1 <= money) {
+  if (betCar1 >= 0 && betCar1 <= money) {
     money -= betCar1
     betAmount += betCar1
     bets.push({ car: "blanche", amount: betCar1, id: "car1" });
   } else if (betCar1 >= money) {
     alert("Vous n'avez pas assez d'argent")
   }
-  if (betCar2 > 0 && betCar2 <= money) {
+  if (betCar2 >= 0 && betCar2 <= money) {
     money -= betCar2
     betAmount += betCar2
     bets.push({ car: "grise", amount: betCar2, id: "car2" });
