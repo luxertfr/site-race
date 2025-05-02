@@ -420,13 +420,13 @@ const tick = () => {
       speedCar2 = THREE.MathUtils.clamp(speedCar2, 0.06, 0.12);
   
       
-      if (!boostCar1 && Math.random() < 0.01 && !boostCar2) { 
+      if (!boostCar1 && Math.random() < 0.01) { 
         boostCar1 = true;
         boostCarTime1 = boostDuration;
         boostStartTime1 = elapsedTime
       }
   
-      if (!boostCar2 && Math.random() < 0.01 && !boostCar1) { 
+      if (!boostCar2 && Math.random() < 0.01) { 
         boostCar2 = true;
         boostCarTime2 = boostDuration;
         boostStartTime2 = elapsedTime
